@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunting</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" bg-gradient-to-r from-indigo-100 via-purple-200 to-pink-200 py-6">
+    <main class="container mx-auto px-6">
+        <section class="flex justify-center items-center flex-col mt-5 space-y-9">
+            <div class="join">
+                <input id="input-brand-name" class="input input-bordered join-item" placeholder="Email" />
+                <button onclick="handleSearch()" class="btn join-item rounded-r-full ">Search</button>
+            </div>
+        </section>
+        <section class="flex justify-center flex-col items-center mt-6">
+            <button onclick="handleShowAll()" class="btn btn-outline btn-secondary">Show All</button>
+            <span id="loader"  class="loading loading-ring loading-lg hidden  mt-4"></span>
+        </section>
+
+        <!-- details container -->
+         <section>
+            <div id="allPhone-container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-8">
+
+            </div>
+         </section>
+    </main>
+
+    <!-- script -->
+     <script src="./js/app.js"></script>
+</body>
+
+</html>
